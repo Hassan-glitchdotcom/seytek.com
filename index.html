@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sey-tech | Web Developer & Creative Designer</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
 
     <style>
         /* =========================
@@ -411,24 +415,58 @@
             gap: 20px;
             flex-wrap: wrap;
         }
+        .whatsapp-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
 
-        .socials {
-            display: flex;
-            gap: 10px;
-        }
+    width: 60px;
+    height: 60px;
 
-        .socials a {
-            padding: 10px 15px;
-            border: 1px solid #333;
-            border-radius: 7px;
-            color: #aaa;
-            transition: 0.3s;
-        }
+    background: #25D366;
+    color: white;
 
-        .socials a:hover {
-            border-color: #00e5ff;
-            color: #00e5ff;
-        }
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+
+    z-index: 1500;
+
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+         .socials a {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #333;
+    border-radius: 8px;
+
+    color: #aaa;
+    font-size: 19px;
+
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    border-color: #00e5ff;
+    color: #00e5ff;
+    transform: translateY(-4px);
+}
 
         /* =========================
            RESPONSIVENESS
@@ -964,27 +1002,37 @@
                     Web • Graphics • Printing • Digital<br> © 2026 Seytech
                 </p>
             </div>
+            <!-- WhatsApp Button -->
+
+<a
+    href="https://wa.me/2349046068485"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="Chat with me on WhatsApp"
+>
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 
-            <div class="socials">
+        <div class="socials">
 
-                <a href="#" target="_blank">
-                    Instagram
-                </a>
+    <a href="https://www.instagram.com/cupid41819?stkn=bTI0OGExcWw2MXE5" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
 
-                <a href="#" target="_blank">
-                    Facebook
-                </a>
+    <a href="https://x.com/cupid27030" target="_blank" aria-label="X">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
 
-                <a href="#" target="_blank">
-                    TikTok
-                </a>
+    <a href="https://www.tiktok.com/@cupid.boy33?_r=1&_t=ZS-99wXix4gMuT" target="_blank" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
 
-                <a href="#" target="_blank">
-                    GitHub
-                </a>
+    <a href="https://github.com/Hassan-glitchdotcom" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+    </a>
 
-            </div>
+</div>
 
         </div>
 
