@@ -94,6 +94,54 @@
             color: #777;
             font-size: 13px;
         }
+        .nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 190px;
+    background: #071a35;
+    padding: 10px 0;
+    list-style: none;
+    border: 1px solid #168cff;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+/* Show dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 18px;
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    background: #168cff;
+}
 
         /* =========================
            MOBILE MENU BUTTON
@@ -639,6 +687,41 @@
             </div>
 
         </section>
+
+        <nav>
+    <ul class="nav-menu">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="#">Services ▾</a>
+
+            <ul class="dropdown-menu">
+                <li><a href="graphic-design.html">Graphic Design</a></li>
+                <li><a href="printing.html">Printing</a></li>
+                <li><a href="mycard.html">MyCard Design</a></li>
+                <li><a href="branding.html">Branding</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Portfolio ▾</a>
+
+            <ul class="dropdown-menu">
+                <li><a href="mycard.html">MyCard</a></li>
+                <li><a href="printing.html">Printing Work</a></li>
+                <li><a href="flyers.html">Flyers</a></li>
+                <li><a href="logos.html">Logos</a></li>
+            </ul>
+        </li>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</nav>
+
+        
 
 
         <!-- SERVICES -->
