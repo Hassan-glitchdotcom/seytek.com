@@ -57,6 +57,97 @@
             justify-content: space-between;
         }
 
+        .side-nav {
+    width: 230px;
+    min-height: 100vh;
+    background: #050b18;
+    padding: 30px 15px;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav li {
+    margin-bottom: 8px;
+}
+
+.side-nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 16px;
+
+    color: #8ea8d0;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+.side-nav a:hover {
+    color: white;
+    background: #102b68;
+}
+
+
+/* Active item */
+
+.side-nav > ul > li:first-child > a {
+    background: #168cff;
+    color: white;
+}
+
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.side-dropdown-menu {
+    display: none;
+
+    margin-top: 5px !important;
+    margin-left: 18px !important;
+
+    border-left: 2px solid #168cff;
+
+    padding-left: 8px !important;
+}
+
+
+/* Show dropdown */
+
+.side-dropdown.active .side-dropdown-menu {
+    display: block;
+}
+
+
+/* Dropdown items */
+
+.side-dropdown-menu a {
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+
+/* Arrow */
+
+.arrow {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+
+/* Rotate arrow */
+
+.side-dropdown.active .arrow {
+    transform: rotate(180deg);
+}
+
           .logo {
     font-size: 40px;
      font-weight: 800;
@@ -94,55 +185,7 @@
             color: #777;
             font-size: 13px;
         }
-        .nav-menu {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-}
-
-.nav-menu li {
-    position: relative;
-}
-
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Dropdown */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 190px;
-    background: #071a35;
-    padding: 10px 0;
-    list-style: none;
-    border: 1px solid #168cff;
-    border-radius: 8px;
-    z-index: 1000;
-}
-
-/* Show dropdown */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    width: 100%;
-}
-
-.dropdown-menu a {
-    display: block;
-    padding: 12px 18px;
-    color: white;
-}
-
-.dropdown-menu a:hover {
-    background: #168cff;
-}
-
+        
         /* =========================
            MOBILE MENU BUTTON
         ========================== */
@@ -635,6 +678,104 @@
 
     </aside>
 
+    <!-- VERTICAL NAVIGATION -->
+<aside class="side-nav">
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <span>⌂</span>
+                Home
+            </a>
+        </li>
+
+
+        <!-- SERVICES DROPDOWN -->
+        <li class="side-dropdown">
+
+            <a href="#" class="dropdown-btn">
+                <span>⚙</span>
+                Services
+                <span class="arrow">▾</span>
+            </a>
+
+            <ul class="side-dropdown-menu">
+
+                <li>
+                    <a href="web.html">Web Design</a>
+                </li>
+
+                <li>
+                    <a href="graphics.html">Graphics</a>
+                </li>
+
+                <li>
+                    <a href="printing.html">Printing</a>
+                </li>
+
+                <li>
+                    <a href="mycard.html">MyCard</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <!-- ABOUT -->
+        <li>
+            <a href="about.html">
+                <span>●</span>
+                About
+            </a>
+        </li>
+
+
+        <!-- PORTFOLIO DROPDOWN -->
+        <li class="side-dropdown">
+
+            <a href="#" class="dropdown-btn">
+                <span>▣</span>
+                Portfolio
+                <span class="arrow">▾</span>
+            </a>
+
+            <ul class="side-dropdown-menu">
+
+                <li>
+                    <a href="mycard.html">MyCard Designs</a>
+                </li>
+
+                <li>
+                    <a href="printing.html">Printing Work</a>
+                </li>
+
+                <li>
+                    <a href="flyers.html">Flyers</a>
+                </li>
+
+                <li>
+                    <a href="logos.html">Logo Designs</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <!-- CONTACT -->
+        <li>
+            <a href="contact.html">
+                <span>✉</span>
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
+
 
     <!-- MOBILE BUTTON -->
 
@@ -687,43 +828,8 @@
             </div>
 
         </section>
-
-        <nav>
-    <ul class="nav-menu">
-
-        <li><a href="index.html">Home</a></li>
-
-        <li class="dropdown">
-            <a href="#">Services ▾</a>
-
-            <ul class="dropdown-menu">
-                <li><a href="graphic-design.html">Graphic Design</a></li>
-                <li><a href="printing.html">Printing</a></li>
-                <li><a href="mycard.html">MyCard Design</a></li>
-                <li><a href="branding.html">Branding</a></li>
-            </ul>
-        </li>
-
-        <li class="dropdown">
-            <a href="#">Portfolio ▾</a>
-
-            <ul class="dropdown-menu">
-                <li><a href="mycard.html">MyCard</a></li>
-                <li><a href="printing.html">Printing Work</a></li>
-                <li><a href="flyers.html">Flyers</a></li>
-                <li><a href="logos.html">Logos</a></li>
-            </ul>
-        </li>
-
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-
-    </ul>
-</nav>
-
+ 
         
-
-
         <!-- SERVICES -->
 
         <section id="services">
