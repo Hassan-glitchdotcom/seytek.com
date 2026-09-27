@@ -1313,6 +1313,18 @@
 
         });
 
+        const dropdownButtons = document.querySelectorAll(".dropdown-btn");
+
+dropdownButtons.forEach(button => {
+    button.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const parent = this.closest(".side-dropdown");
+
+        parent.classList.toggle("active");
+    });
+});
+
     </script>
 
 </body>
